@@ -1666,5 +1666,12 @@ def main(page: ft.Page):
 
 if __name__ == "__main__":
     import os
-    port = int(os.environ.get("PORT", 8085))
-    ft.app(target=main, view=ft.WEB_BROWSER, host="0.0.0.0", port=port)
+    port = int(os.environ.get("PORT", 8080))
+    ft.app(
+        target=main,
+        view=None,          # importante: no abrir navegador local
+        host="0.0.0.0",
+        port=port,
+        assets_dir="."      # opcional si usás imágenes locales
+    )
+
