@@ -26,4 +26,6 @@ EXPOSE 8080
 
 # Comando de ejecución
 # Se usa --web para servir la app como sitio web accesible desde Render
-CMD ["flet", "main.py", "--port", "8080", "--web"]
+CMD ["python", "main.py"]
+
+
